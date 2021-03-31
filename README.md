@@ -1,1 +1,1 @@
-8.0.0-cli-alpine
+docker push siomkin/8-cli-alpine
