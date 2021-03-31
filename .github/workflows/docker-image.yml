@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: 8-cli-alpine Docker Image CI
 
 on:
   push:
@@ -15,7 +15,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
 
     steps:
     - uses: actions/checkout@v2
@@ -38,4 +37,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: $IMAGE_NAME
-          tag: $VERSION    
+          tag: $VERSION
