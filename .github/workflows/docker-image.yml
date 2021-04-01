@@ -3,8 +3,7 @@ name: 8-cli-alpine Docker Image CI
 on:
   push:
     # Publish as Docker `latest` image.
-    branches:
-      - $default-branch
+    branches: [ latest ]
     # Publish `v1.2.3` tags as releases.
     tags:
       - v*
